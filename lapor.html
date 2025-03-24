@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('paper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header, footer {
+            background-color: #7afca0;
+            padding: 15px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #54ac4f;
+        }
+        .nav-container {
+            display: flex;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.54);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .content {
+            flex: 1; /* Mendorong footer ke bawah */
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+        .container {
+        width: 90%;
+        max-width: 810px; /* Batas lebar maksimal */
+        background: rgba(255, 255, 255, 0.54);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 0 auto; /* Menengahkan secara horizontal */
+        margin-bottom: 27px;
+}
+
+
+        .container1 {
+            margin-bottom: 27px;
+            margin-top: 27px;
+        }
+        p{
+            text-align: justify;
+        }
+        p2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laporan Transaksi</h1>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="input.html">Input</a>
+            <a href="infor.html">Info</a>
+            <a href="lapor.html">Laporan</a>
+        </div>
+    </nav>
+    <div class="container container1">
+        <h2>Data Barang</h2>
+        <p>Tabel barang berisi data mengenai berbagai jenis produk yang tersedia di toko, termasuk informasi penting seperti nomor barang, merk, harga, jumlah stok, serta rata-rata pembelian harian, bulanan, dan tahunan. Data ini berguna untuk memantau ketersediaan barang dan memastikan stok tetap mencukupi sesuai dengan permintaan pelanggan. Dengan adanya informasi ini, pengelola toko dapat mengatur strategi pengadaan barang agar tidak terjadi kekurangan atau kelebihan stok. Selain itu, pencatatan rata-rata pembelian membantu dalam menganalisis tren konsumsi pelanggan dari waktu ke waktu. Dengan demikian, tabel barang berperan penting dalam menjaga kelancaran operasional dan efisiensi manajemen toko.</p>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nomor Barang</th>
+                    <th>Nama Buah</th>
+                    <th>Jumlah Stok</th>
+                    <th>Harga per Kg (Rp)</th>
+                    <th>Rata-rata Pembelian Harian</th>
+                    <th>Rata-rata Pembelian Bulanan</th>
+                    <th>Rata-rata Pembelian Tahunan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>200001</td>
+                    <td>Apel</td>
+                    <td>600</td>
+                    <td>25.000</td>
+                    <td>5</td>
+                    <td>50</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>200002</td>
+                    <td>Pisang</td>
+                    <td>750</td>
+                    <td>15.000</td>
+                    <td>7</td>
+                    <td>70</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>200003</td>
+                    <td>Jeruk</td>
+                    <td>450</td>
+                    <td>20.000</td>
+                    <td>4</td>
+                    <td>40</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>200004</td>
+                    <td>Mangga</td>
+                    <td>650</td>
+                    <td>18.000</td>
+                    <td>6</td>
+                    <td>60</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>200005</td>
+                    <td>Semangka</td>
+                    <td>350</td>
+                    <td>10.000</td>
+                    <td>3</td>
+                    <td>30</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>200006</td>
+                    <td>Anggur</td>
+                    <td>900</td>
+                    <td>35.000</td>
+                    <td>8</td>
+                    <td>80</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td>200007</td>
+                    <td>Nanas</td>
+                    <td>500</td>
+                    <td>12.000</td>
+                    <td>5</td>
+                    <td>50</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>200008</td>
+                    <td>Melon</td>
+                    <td>400</td>
+                    <td>13.000</td>
+                    <td>4</td>
+                    <td>40</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>200009</td>
+                    <td>Stroberi</td>
+                    <td>950</td>
+                    <td>40.000</td>
+                    <td>9</td>
+                    <td>90</td>
+                    <td>900</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    <div class="container container1">
+        <h2>Data Pelanggan</h2>
+        <p>Tabel pelanggan berisi data mengenai individu yang melakukan pembelian barang berdasarkan nomor barang yang tersedia. Informasi yang dicantumkan meliputi nama pelanggan, nomor barang yang dibeli, serta jumlah pembelian harian, bulanan, dan tahunan. Data ini membantu dalam menganalisis pola pembelian setiap pelanggan untuk memahami kebutuhan dan kebiasaan konsumsi mereka. Dengan adanya informasi ini, pengelola toko dapat mengoptimalkan stok barang agar sesuai dengan permintaan pelanggan. Selain itu, data tersebut juga dapat digunakan untuk merancang strategi pemasaran yang lebih efektif berdasarkan frekuensi dan jumlah pembelian pelanggan.
+        </p>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nama Pelanggan</th>
+                    <th>Nomor Barang</th>
+                    <th>Jumlah Pembelian Harian</th>
+                    <th>Jumlah Pembelian Bulanan</th>
+                    <th>Jumlah Pembelian Tahunan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andi</td>
+                    <td>200001</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Budi</td>
+                    <td>200002</td>
+                    <td>3</td>
+                    <td>30</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Citra</td>
+                    <td>200003</td>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Dewi</td>
+                    <td>200004</td>
+                    <td>4</td>
+                    <td>35</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Eka</td>
+                    <td>200005</td>
+                    <td>2</td>
+                    <td>25</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Fajar</td>
+                    <td>200006</td>
+                    <td>5</td>
+                    <td>45</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td>Gita</td>
+                    <td>200007</td>
+                    <td>3</td>
+                    <td>28</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>Hadi</td>
+                    <td>200008</td>
+                    <td>4</td>
+                    <td>40</td>
+                    <td>370</td>
+                </tr>
+                <tr>
+                    <td>Indah</td>
+                    <td>200009</td>
+                    <td>6</td>
+                    <td>55</td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+        </table>
+         
+    </div>
+    <div class="container container1">
+        <h2>Rekapitulasi Harian</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nama Buah</th>
+                    <th>Jumlah Terjual</th>
+                    <th>Harga Satuan (Rp)</th>
+                    <th>Total Penjualan (Rp)</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apel</td>
+                    <td>5</td>
+                    <td>25.000</td>
+                    <td>125.000</td>
+                    <td>Terjual stabil</td>
+                </tr>
+                <tr>
+                    <td>Pisang</td>
+                    <td>7</td>
+                    <td>15.000</td>
+                    <td>105.000</td>
+                    <td>Paling laris</td>
+                </tr>
+                <tr>
+                    <td>Jeruk</td>
+                    <td>4</td>
+                    <td>20.000</td>
+                    <td>80.000</td>
+                    <td>Kurang diminati</td>
+                </tr>
+                <tr>
+                    <td>Mangga</td>
+                    <td>6</td>
+                    <td>18.000</td>
+                    <td>108.000</td>
+                    <td>Terjual cukup baik</td>
+                </tr>
+                <tr>
+                    <td>Semangka</td>
+                    <td>3</td>
+                    <td>10.000</td>
+                    <td>30.000</td>
+                    <td>Paling sedikit terjual</td>
+                </tr>
+                <tr>
+                    <td>Anggur</td>
+                    <td>8</td>
+                    <td>35.000</td>
+                    <td>280.000</td>
+                    <td>Terjual tinggi</td>
+                </tr>
+                <tr>
+                    <td>Nanas</td>
+                    <td>5</td>
+                    <td>12.000</td>
+                    <td>60.000</td>
+                    <td>Terjual stabil</td>
+                </tr>
+                <tr>
+                    <td>Melon</td>
+                    <td>4</td>
+                    <td>13.000</td>
+                    <td>52.000</td>
+                    <td>Kurang laku</td>
+                </tr>
+                <tr>
+                    <td>Stroberi</td>
+                    <td>9</td>
+                    <td>40.000</td>
+                    <td>360.000</td>
+                    <td>Terlaris kedua</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    <div class="container container1">
+        <h2>Rekapitulasi Bulanan</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nama Buah</th>
+                    <th>Jumlah Terjual</th>
+                    <th>Harga Satuan (Rp)</th>
+                    <th>Total Penjualan (Rp)</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apel</td>
+                    <td>50</td>
+                    <td>25.000</td>
+                    <td>1.250.000</td>
+                    <td>Terjual stabil</td>
+                </tr>
+                <tr>
+                    <td>Pisang</td>
+                    <td>70</td>
+                    <td>15.000</td>
+                    <td>1.050.000</td>
+                    <td>Paling laris</td>
+                </tr>
+                <tr>
+                    <td>Jeruk</td>
+                    <td>40</td>
+                    <td>20.000</td>
+                    <td>800.000</td>
+                    <td>Kurang diminati</td>
+                </tr>
+                <tr>
+                    <td>Mangga</td>
+                    <td>60</td>
+                    <td>18.000</td>
+                    <td>1.080.000</td>
+                    <td>Terjual cukup baik</td>
+                </tr>
+                <tr>
+                    <td>Semangka</td>
+                    <td>30</td>
+                    <td>10.000</td>
+                    <td>300.000</td>
+                    <td>Paling sedikit terjual</td>
+                </tr>
+                <tr>
+                    <td>Anggur</td>
+                    <td>80</td>
+                    <td>35.000</td>
+                    <td>2.800.000</td>
+                    <td>Terjual tinggi</td>
+                </tr>
+                <tr>
+                    <td>Nanas</td>
+                    <td>50</td>
+                    <td>12.000</td>
+                    <td>600.000</td>
+                    <td>Terjual stabil</td>
+                </tr>
+                <tr>
+                    <td>Melon</td>
+                    <td>40</td>
+                    <td>13.000</td>
+                    <td>520.000</td>
+                    <td>Kurang laku</td>
+                </tr>
+                <tr>
+                    <td>Stroberi</td>
+                    <td>90</td>
+                    <td>40.000</td>
+                    <td>3.600.000</td>
+                    <td>Terlaris kedua</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </div>
+    <div class="container container1">
+        <h2>Rekapitulasi Tahunan</h2>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Nama Buah</th>
+                <th>Jumlah Terjual</th>
+                <th>Harga Satuan (Rp)</th>
+                <th>Total Penjualan (Rp)</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apel</td>
+                <td>500</td>
+                <td>25.000</td>
+                <td>12.500.000</td>
+                <td>Terjual stabil</td>
+            </tr>
+            <tr>
+                <td>Pisang</td>
+                <td>700</td>
+                <td>15.000</td>
+                <td>10.500.000</td>
+                <td>Paling laris</td>
+            </tr>
+            <tr>
+                <td>Jeruk</td>
+                <td>400</td>
+                <td>20.000</td>
+                <td>8.000.000</td>
+                <td>Kurang diminati</td>
+            </tr>
+            <tr>
+                <td>Mangga</td>
+                <td>600</td>
+                <td>18.000</td>
+                <td>10.800.000</td>
+                <td>Terjual cukup baik</td>
+            </tr>
+            <tr>
+                <td>Semangka</td>
+                <td>300</td>
+                <td>10.000</td>
+                <td>3.000.000</td>
+                <td>Paling sedikit terjual</td>
+            </tr>
+            <tr>
+                <td>Anggur</td>
+                <td>800</td>
+                <td>35.000</td>
+                <td>28.000.000</td>
+                <td>Terjual tinggi</td>
+            </tr>
+            <tr>
+                <td>Nanas</td>
+                <td>450</td>
+                <td>12.000</td>
+                <td>5.400.000</td>
+                <td>Terjual stabil</td>
+            </tr>
+            <tr>
+                <td>Melon</td>
+                <td>350</td>
+                <td>13.000</td>
+                <td>4.550.000</td>
+                <td>Kurang laku</td>
+            </tr>
+            <tr>
+                <td>Stroberi</td>
+                <td>900</td>
+                <td>40.000</td>
+                <td>36.000.000</td>
+                <td>Terlaris kedua</td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+    <footer>
+        <div class="p2">&copy; 2025 Website. All Rights Reserved.</div>
+        
+    </footer>
+</body>
+</html>

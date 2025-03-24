@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Vault</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('paper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header, footer {
+            background-color: #7afca0;
+            padding: 15px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #54ac4f;
+        }
+        .nav-container {
+            display: flex;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.54);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .content {
+            flex: 1; /* Mendorong footer ke bawah */
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+        .container {
+        width: 90%;
+        max-width: 810px; /* Batas lebar maksimal */
+        background: rgba(255, 255, 255, 0.54);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 0 auto; /* Menengahkan secara horizontal */
+        margin-bottom: 27px;
+}
+
+
+        .container1 {
+            margin-bottom: 27px;
+            margin-top: 27px;
+        }
+        p{
+            text-align: justify;
+        }
+        p2{
+            text-align: center;
+        }
+        summary{
+            text-align: justify;
+            margin-left: 27px;
+        }
+        li{
+            text-align: justify;
+            margin-left: 27px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laporan Transaksi</h1>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="input.html">Input</a>
+            <a href="infor.html">Info</a>
+            <a href="lapor.html">Laporan</a>
+        </div>
+    </nav>
+    <div class="container container1">
+        <!DOCTYPE html>
+        <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Daftar Buah</title>
+        </head>
+        <body>
+            
+            <h2>Daftar Barang</h2>
+            <p>
+                Tabel ini memuat informasi mengenai berbagai jenis buah yang tersedia di pasar.  
+                Setiap buah memiliki nomor barang unik, jumlah stok yang tersedia, serta harga per kilogram.  
+                Selain itu, tabel juga mencantumkan rata-rata jumlah pembelian buah tersebut dalam rentang harian, bulanan, dan tahunan.  
+                Data ini berguna untuk mengetahui tren penjualan dan memastikan ketersediaan stok yang cukup bagi pelanggan.  
+                Dengan informasi ini, pemilik usaha dapat mengelola persediaan barang secara efisien dan menyesuaikan strategi pemasaran.  
+            </p>
+            <details>
+                <summary>Apel</summary>
+                <ul>
+                    <li>Nomor Barang: 200001</li>
+                    <li>Jumlah Stok: 600</li>
+                    <li>Harga per Kg: Rp 25.000</li>
+                    <li>Pembelian Harian: 5</li>
+                    <li>Pembelian Bulanan: 50</li>
+                    <li>Pembelian Tahunan: 500</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Pisang</summary>
+                <ul>
+                    <li>Nomor Barang: 200002</li>
+                    <li>Jumlah Stok: 750</li>
+                    <li>Harga per Kg: Rp 15.000</li>
+                    <li>Pembelian Harian: 7</li>
+                    <li>Pembelian Bulanan: 70</li>
+                    <li>Pembelian Tahunan: 700</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Jeruk</summary>
+                <ul>
+                    <li>Nomor Barang: 200003</li>
+                    <li>Jumlah Stok: 450</li>
+                    <li>Harga per Kg: Rp 20.000</li>
+                    <li>Pembelian Harian: 4</li>
+                    <li>Pembelian Bulanan: 40</li>
+                    <li>Pembelian Tahunan: 400</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Mangga</summary>
+                <ul>
+                    <li>Nomor Barang: 200004</li>
+                    <li>Jumlah Stok: 650</li>
+                    <li>Harga per Kg: Rp 18.000</li>
+                    <li>Pembelian Harian: 6</li>
+                    <li>Pembelian Bulanan: 60</li>
+                    <li>Pembelian Tahunan: 600</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Semangka</summary>
+                <ul>
+                    <li>Nomor Barang: 200005</li>
+                    <li>Jumlah Stok: 350</li>
+                    <li>Harga per Kg: Rp 10.000</li>
+                    <li>Pembelian Harian: 3</li>
+                    <li>Pembelian Bulanan: 30</li>
+                    <li>Pembelian Tahunan: 300</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Anggur</summary>
+                <ul>
+                    <li>Nomor Barang: 200006</li>
+                    <li>Jumlah Stok: 900</li>
+                    <li>Harga per Kg: Rp 35.000</li>
+                    <li>Pembelian Harian: 8</li>
+                    <li>Pembelian Bulanan: 80</li>
+                    <li>Pembelian Tahunan: 800</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Nanas</summary>
+                <ul>
+                    <li>Nomor Barang: 200007</li>
+                    <li>Jumlah Stok: 500</li>
+                    <li>Harga per Kg: Rp 12.000</li>
+                    <li>Pembelian Harian: 5</li>
+                    <li>Pembelian Bulanan: 50</li>
+                    <li>Pembelian Tahunan: 450</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Melon</summary>
+                <ul>
+                    <li>Nomor Barang: 200008</li>
+                    <li>Jumlah Stok: 400</li>
+                    <li>Harga per Kg: Rp 13.000</li>
+                    <li>Pembelian Harian: 4</li>
+                    <li>Pembelian Bulanan: 40</li>
+                    <li>Pembelian Tahunan: 350</li>
+                </ul>
+            </details>
+        
+            <details>
+                <summary>Stroberi</summary>
+                <ul>
+                    <li>Nomor Barang: 200009</li>
+                    <li>Jumlah Stok: 950</li>
+                    <li>Harga per Kg: Rp 40.000</li>
+                    <li>Pembelian Harian: 9</li>
+                    <li>Pembelian Bulanan: 90</li>
+                    <li>Pembelian Tahunan: 900</li>
+                </ul>
+            </details>
+        
+        </body>
+        </html>
+        
+    </div>
+    <div class="container container1">
+        
+        <h2>Data Pelanggan</h2>
+        <p>
+            Tabel ini menampilkan informasi pembelian pelanggan terhadap berbagai jenis barang yang tersedia.  
+            Setiap pelanggan memiliki data nomor barang yang dibeli beserta jumlah pembeliannya dalam skala harian, bulanan, dan tahunan.  
+            Informasi ini sangat berguna untuk menganalisis pola konsumsi pelanggan serta melakukan perencanaan stok yang lebih baik.  
+            Dengan memahami kebiasaan pembelian, pemilik usaha dapat meningkatkan strategi pemasaran dan menawarkan promosi yang sesuai.  
+            Data ini juga membantu dalam memprediksi tren permintaan barang di masa mendatang, sehingga dapat menghindari kekurangan stok atau kelebihan persediaan. 
+            Berikut adalah data berdasarkan 9 orang pelanggan dalam kurun waktu 1 tahun  
+        </p>
+    <details>
+        <summary>Andi</summary>
+        <ul>
+            <li>Nomor Barang: 200001</li>
+            <li>Jumlah Pembelian Harian: 2</li>
+            <li>Jumlah Pembelian Bulanan: 20</li>
+            <li>Jumlah Pembelian Tahunan: 200</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Budi</summary>
+        <ul>
+            <li>Nomor Barang: 200002</li>
+            <li>Jumlah Pembelian Harian: 3</li>
+            <li>Jumlah Pembelian Bulanan: 30</li>
+            <li>Jumlah Pembelian Tahunan: 300</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Citra</summary>
+        <ul>
+            <li>Nomor Barang: 200003</li>
+            <li>Jumlah Pembelian Harian: 1</li>
+            <li>Jumlah Pembelian Bulanan: 15</li>
+            <li>Jumlah Pembelian Tahunan: 150</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Dewi</summary>
+        <ul>
+            <li>Nomor Barang: 200004</li>
+            <li>Jumlah Pembelian Harian: 4</li>
+            <li>Jumlah Pembelian Bulanan: 35</li>
+            <li>Jumlah Pembelian Tahunan: 350</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Eka</summary>
+        <ul>
+            <li>Nomor Barang: 200005</li>
+            <li>Jumlah Pembelian Harian: 2</li>
+            <li>Jumlah Pembelian Bulanan: 25</li>
+            <li>Jumlah Pembelian Tahunan: 250</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Fajar</summary>
+        <ul>
+            <li>Nomor Barang: 200006</li>
+            <li>Jumlah Pembelian Harian: 5</li>
+            <li>Jumlah Pembelian Bulanan: 45</li>
+            <li>Jumlah Pembelian Tahunan: 450</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Gita</summary>
+        <ul>
+            <li>Nomor Barang: 200007</li>
+            <li>Jumlah Pembelian Harian: 3</li>
+            <li>Jumlah Pembelian Bulanan: 28</li>
+            <li>Jumlah Pembelian Tahunan: 280</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Hadi</summary>
+        <ul>
+            <li>Nomor Barang: 200008</li>
+            <li>Jumlah Pembelian Harian: 4</li>
+            <li>Jumlah Pembelian Bulanan: 40</li>
+            <li>Jumlah Pembelian Tahunan: 370</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Indah</summary>
+        <ul>
+            <li>Nomor Barang: 200009</li>
+            <li>Jumlah Pembelian Harian: 6</li>
+            <li>Jumlah Pembelian Bulanan: 55</li>
+            <li>Jumlah Pembelian Tahunan: 500</li>
+        </ul>
+    </details>        
+    </div>
+    <div class="container container1">
+        <h2>Cari Barang Tersedia</h2>
+        <input type="text" id="searchInput" placeholder="Cari nama barang..." onkeyup="searchItem()">
+        <button onclick="searchItem()">Cari</button>
+
+        <script>
+            function searchItem() {
+                let input = document.getElementById("searchInput").value.toLowerCase();
+                let details = document.querySelectorAll("details");
+            
+                details.forEach(detail => {
+                    let summary = detail.querySelector("summary").textContent.toLowerCase();
+                    if (summary.includes(input)) {
+                        detail.style.display = "block";
+                    } else {
+                        detail.style.display = "none";
+                    }
+                });
+            }
+            </script>
+    </div>
+    <footer>
+        <div class="p2">&copy; 2025 Website. All Rights Reserved.</div>
+        
+    </footer>
+</body>
+</html>

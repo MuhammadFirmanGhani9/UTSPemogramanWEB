@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('paper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header, footer {
+            background-color: #7afca0;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #54ac4f;
+        }
+        
+        .nav-container {
+            display: flex;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.54);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 810px;
+            background: rgba(255, 255, 255, 0.54);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: justify;
+            margin-left: 72px;
+        }
+        
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laporan Transaksi</h1>
+    </header>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="input.html">Input</a>
+            <a href="infor.html">Info</a>
+            <a href="lapor.html">Laporan</a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="container">
+            <h2>Input Data Barang</h2>
+            <form>
+                <label for="nomor">Nomor Barang</label>
+                <input type="text" id="nomor" name="nomor" required>
+
+                <label for="merk">Merk</label>
+                <input type="text" id="merk" name="merk" required>
+
+                <label for="harga">Harga</label>
+                <input type="number" id="harga" name="harga" required>
+
+                <label for="stok">Stok Tersedia</label>
+                <input type="number" id="stok" name="stok" required>
+
+                <h3>Rata-rata Pembelian</h3>
+                <label for="harian">Harian</label>
+                <input type="number" id="harian" name="harian" required>
+                
+                <label for="bulanan">Bulanan</label>
+                <input type="number" id="bulanan" name="bulanan" required>
+                
+                <label for="tahunan">Tahunan</label>
+                <input type="number" id="tahunan" name="tahunan" required>
+                
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Input Data Pelanggan</h2>
+            <form>
+                <label for="nama">Nama Pelanggan</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="nomor-barang">Nomor Barang yang Dibeli</label>
+                <input type="text" id="nomor-barang" name="nomor-barang" required>
+
+                <h3>Jumlah Pembelian</h3>
+                <label for="harian-p">Harian</label>
+                <input type="number" id="harian-p" name="harian-p" required>
+                
+                <label for="bulanan-p">Bulanan</label>
+                <input type="number" id="bulanan-p" name="bulanan-p" required>
+                
+                <label for="tahunan-p">Tahunan</label>
+                <input type="number" id="tahunan-p" name="tahunan-p" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
